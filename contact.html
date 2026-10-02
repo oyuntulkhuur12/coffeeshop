@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Холбоо барих | Кофе шоф</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo"><i class="fa-solid fa-mug-hot"></i>Кофе <span>шоф</span></a>
+        <ul class="menu">
+        <li><a href="index.html">Эхлэл</a></li>
+        <li><a href="about.html">Бидний тухай</a></li>
+        <li><a href="menu.html">Манай цэс</a></li>
+        <li><a href="contact.html" class="active">Холбоо барих</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="contact contact-page">
+    <h2>Бидэнтэй холбогдох</h2>
+    <form action="#" method="post">
+      <label for="name">Нэр</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Имэйл</label>
+      <input type="email" id="email" name="email" required>
+      <label for="topic">Сэдэв</label>
+      <select id="topic" name="topic">
+        <option>Санал хүсэлт</option>
+        <option>Захиалга</option>
+        <option>Гомдол</option>
+      </select>
+      <label for="message">Зурвас</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit" class="btn">Илгээх</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; Lorem ipsum dolor sit amet consectetur.</p>
+  </footer>
+</body>
+</html>
