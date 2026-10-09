@@ -1,8 +1,8 @@
-/* ===== Үндсэн тохиргоо ===== */
+
 :root {
-    --main: #ac7e68;   /* үндсэн өнгө */
-    --nav: #222;       /* navbar дэвсгэр */
-    --bg: #fffbf2;     /* арын цайвар өнгө */
+    --main: #ac7e68;  
+    --nav: #222;       
+    --bg: #fffbf2;    
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: 'Roboto Slab', serif; background: var(--bg); color: #222; line-height: 1.9; }
@@ -12,7 +12,6 @@
   h1, h2, h3 { line-height: 1.3; }
   .container { width: 90%; max-width: 1200px; margin: 0 auto; }
   
-  /* ===== Navbar (Flex) ===== */
   .navbar { background: var(--nav); }
   .navbar .container {
     max-width: none; width: 100%; padding: 0 20px;
@@ -25,7 +24,6 @@
   .menu a { display: block; color: #fff; padding: 8px 16px; transition: background .3s; }
   .menu a:hover, .menu a.active { background: var(--main); }
   
-  /* ===== Hero + Overlay ===== */
   .hero, .hero-lg, .overlay-section {
     position: relative; color: #fff; text-align: center;
     background-size: cover; background-position: center; background-repeat: no-repeat;
@@ -35,9 +33,8 @@
   }
   .hero > *, .hero-lg > *, .overlay-section > * { position: relative; }
   
-  /* Нүүр хуудасны hero */
   .hero {
-    background-image: url('home2.jpg'); /* зургийн замаа энд бич: url('images/...') */
+    background-image: url('home2.jpg');
     min-height: 560px; display: flex; flex-direction: column; justify-content: center; align-items: center;
   }
   .hero::before { background: rgba(0, 0, 0, .15); }
@@ -48,16 +45,14 @@
   }
   .btn:hover { background: #fff; color: var(--main); }
   
-  /* Том hero (Холбоо барих хуудас) */
   .hero-lg {
-    background-image: url('home1.jpg'), url('home1.jpg'); /* аль нэг нь олдвол харагдана */
+    background-image: url('home1.jpg'), url('home1.jpg'); 
     min-height: 720px; display: flex; flex-direction: column; justify-content: center; align-items: center;
     padding: 0 20px;
   }
   .hero-lg p { color: var(--main); font-size: 1.3rem; margin-bottom: 50px; }
   .hero-lg h1 { font-size: 5rem; font-weight: 400; }
   
-  /* ===== Сэтгэгдэл (Flex) ===== */
   .reviews { padding: 60px 0 80px; }
   .reviews h2 { text-align: center; font-size: 2rem; margin-bottom: 50px; }
   .review-list { display: flex; gap: 100px; }
@@ -66,7 +61,6 @@
   .review h3 { font-size: 1.15rem; }
   .stars { color: var(--main); }
   
-  /* ===== Бидний тухай (Grid) ===== */
   .about { padding: 70px 0; }
   .about .container { display: grid; grid-template-columns: 1fr 1.25fr; gap: 60px; align-items: center; }
   .circle-img {
@@ -82,7 +76,6 @@
   .overlay-section h2 { font-size: 3.4rem; font-weight: 400; margin-bottom: 28px; }
   .overlay-section p { max-width: 1000px; margin: 0 auto; }
   
-  /* ===== Дээд зэрэглэлийн кофе (Grid) ===== */
   .premium { padding: 60px 0 80px; }
   .premium .container { display: grid; grid-template-columns: 1.1fr 1fr; gap: 80px; align-items: center; }
   .premium h2 { font-size: 2.2rem; margin-bottom: 30px; }
@@ -90,7 +83,6 @@
   .premium blockquote p { margin-bottom: 24px; }
   .premium img { width: 100%; border: 6px solid #fff; box-shadow: 0 4px 14px rgba(0,0,0,.15); }
   
-  /* ===== Цэс (Grid) ===== */
   .menu-section { padding: 40px 0 60px; }
   .menu-section .container { max-width: none; width: 100%; padding: 0 40px;
     display: grid; grid-template-columns: 1fr 1.1fr; gap: 40px; align-items: start; }
@@ -102,7 +94,6 @@
   .menu-item .row { display: flex; justify-content: space-between; font-weight: 700; text-transform: uppercase; }
   .menu-item p { font-size: .95rem; }
   
-  /* ===== Форм ===== */
   .contact { padding: 0 0 80px; }
   .contact form { max-width: 700px; margin: 0 auto; }
   .contact h2 { text-align: center; color: var(--main); font-size: 2rem; margin-bottom: 20px; }
@@ -113,10 +104,8 @@
   form input:focus, form select:focus, form textarea:focus { outline: 2px solid var(--main); border-color: var(--main); }
   form .btn { margin-top: 20px; }
   
-  /* ===== Footer ===== */
   footer { background: #000; color: #fff; text-align: center; padding: 60px 16px; }
   
-  /* ===== Mobile ===== */
   @media (max-width: 800px) {
     .navbar .container { height: auto; flex-direction: column; padding: 12px; }
     .menu { flex-wrap: wrap; justify-content: center; }
